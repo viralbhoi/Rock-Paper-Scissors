@@ -56,3 +56,83 @@ img{
     padding: 1.1rem;
     border-radius: 1.1rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    .choice {
+        height: 140px;
+        width: 140px;
+    }
+
+    .choices {
+        gap: 25px;
+        height: 50vh;
+        flex-wrap: wrap;
+    }
+    img{
+        object-fit: cover;
+        height: 120px;
+        width: 120px;
+    };
+
+    .score-board {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    #user-score,
+    #computer-score {
+        font-size: 2rem;
+    }
+
+    .msg-container {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        line-height: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        /* border-width: 1px; */
+        object-fit: cover;
+    }
+
+    .choices {
+        gap: 7px;
+        min-height: 50vh;
+        flex-wrap: wrap;
+    }
+
+    .score-board {
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    #user-score,
+    #computer-score {
+        font-size: 1.5rem;
+    }
+
+    .msg-container {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
